@@ -1,7 +1,7 @@
 # pizza_project
 Manageable pizza delivery service
 
-####Description:
+#### Description:
 - pizza **Flavors** and **Sizes** could be managed via **/admin/**;
 - based on **Flavors** and **Sizes** **/admin/** create **Pizza** and compose menu;
 - menu available via **/api/menu/**;
@@ -29,7 +29,7 @@ Customer consists of:
 - application designed on future scaling basis: just add ManyToMany Relation in between Pizza - Product;
 - there is short Dashboard in django admin;
 
-####How to run:
+#### How to run:
 - docker-compose build
 - docker-compose up (to make all initial db migrations)
 - stop Ctrl+C
@@ -40,7 +40,7 @@ Customer consists of:
 - docker-compose run web /usr/local/bin/python manage.py collectstatic
 - docker-compose up
 
-####Queries
+#### Queries
 - short [Swagger](https://editor.swagger.io/) description for Order creation in **quieries/openapi.yaml**;
 - examples in **./quieries**;
 - there is dev server at your service.
