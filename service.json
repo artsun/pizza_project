@@ -1,0 +1,1 @@
+[{"model": "service.status", "pk": 1, "fields": {"val": "New", "number": 1}}, {"model": "service.status", "pk": 2, "fields": {"val": "In Progress", "number": 2}}, {"model": "service.status", "pk": 3, "fields": {"val": "In Delivery", "number": 3}}, {"model": "service.status", "pk": 4, "fields": {"val": "Finished", "number": 4}}]

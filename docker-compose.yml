@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    env_file:
+       - 'variables.env'
+    links:
+      - db:db
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    command: sh -c "python manage.py makemigrations market && python manage.py makemigrations service && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+  db:
+    image: postgres
+    env_file:
+       - 'variables.env'
