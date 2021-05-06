@@ -30,15 +30,15 @@ Customer consists of:
 - there is short Dashboard in django admin;
 
 #### How to run:
-- docker-compose build
-- docker-compose up (to make all initial db migrations)
+- `docker-compose build`
+- `docker-compose up` (to make all initial db migrations)
 - stop Ctrl+C
 - optional: to load initial statuses, pizza and sizes:
-  - docker-compose run web /usr/local/bin/python manage.py loaddata ../market.json
-  - docker-compose run web /usr/local/bin/python manage.py loaddata ../service.json
-- docker-compose run web /usr/local/bin/python manage.py createsuperuser
-- docker-compose run web /usr/local/bin/python manage.py collectstatic
-- docker-compose up
+  - `docker-compose run web /usr/local/bin/python manage.py loaddata ../market.json`
+  - `docker-compose run web /usr/local/bin/python manage.py loaddata ../service.json`
+- `docker-compose run web /usr/local/bin/python manage.py createsuperuser`
+- `docker-compose run web /usr/local/bin/python manage.py collectstatic`
+- `docker-compose up`
 
 #### Queries
 - short [Swagger](https://editor.swagger.io/) description for Order creation in **quieries/openapi.yaml**;
