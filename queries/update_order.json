@@ -1,0 +1,25 @@
+{
+	"products": [
+		{
+			"name": {
+				"flavor": "Marinara",
+        		"size": "Medium"				
+		    },
+		    "number": 1
+		},
+		{
+			"name": {
+				"flavor": "Margarita",
+        		"size": "Large"				
+		    },
+		    "number": 3
+		},
+		{
+			"name": {
+				"flavor": "Salami",
+        		"size": "Medium"				
+		    },
+		    "number": 0
+		}
+	]
+}

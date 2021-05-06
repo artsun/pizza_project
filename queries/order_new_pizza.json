@@ -1,0 +1,23 @@
+{
+	"customer": {
+		"name": "ExampleUser",
+		"email": "example@example.com",
+		"address": "example street"
+	},
+	"products": [
+		{
+			"name": {
+				"flavor": "Marinara",
+        		"size": "Medium"				
+		    },
+		    "number": 1
+		},
+		{
+			"name": {
+				"flavor": "Salami",
+        		"size": "Medium"				
+		    },
+		    "number": 2
+		}
+	]
+}

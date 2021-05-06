@@ -1,0 +1,63 @@
+openapi: 3.0.1
+info:
+  title: Pizza Delivery
+  description: ''
+  version: 1.0.0
+servers:
+  - url: /
+tags:
+  - name: order
+    description: Handle Orders
+    externalDocs:
+      description: Find out more about our store
+      url: 'http://swagger.io'
+paths:
+  /api/orders:
+    post:
+      tags:
+        - order
+      summary: Add a new order
+      requestBody:
+        description: Order to be added to the service
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+        required: true
+      responses:
+        '405':
+          description: Invalid input
+          content: {}
+      x-codegen-request-body-name: body
+components:
+  schemas:
+    customer:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        address:
+          type: string
+    product:
+      type: object
+      properties:
+        name:
+          type: object
+          properties:
+            flavor:
+              type: string
+            size:
+              type: string
+        number:
+          type: integer
+    Order:
+      type: object
+      properties:
+        customer:
+          $ref: '#/components/schemas/customer'
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/product'
