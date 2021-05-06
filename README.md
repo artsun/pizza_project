@@ -21,10 +21,10 @@ Customer consists of:
 - to filter by status use `/api/orders/?status__val=`;
 - to filter by name use `/api/orders/?customer__name=`;
 - there are 4 type of statuses and changes available only for two first:
- - New
- - In Progress
- - In Delivery
- - Finished
+  - New
+  - In Progress
+  - In Delivery
+  - Finished
 - status names could be customised;
 - application designed on future scaling basis: just add ManyToMany Relation in between Pizza - Product;
 - there is short Dashboard in django admin;
